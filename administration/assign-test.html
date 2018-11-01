@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="..\css\grid.css">
+        <link rel="stylesheet" type="text/css" href="..\css\menu-admin.css">
+        <link rel="stylesheet" type="text/css" href="..\css\form-style.css">
+        <link rel="stylesheet" type="text/css" href="..\css\table-style.css">
+    </head><!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="..\css\grid.css">
+        <link rel="stylesheet" type="text/css" href="..\css\menu-admin.css">
+        <link rel="stylesheet" type="text/css" href="..\css\form-style.css">
+        <link rel="stylesheet" type="text/css" href="..\css\table-style.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12"><span></span></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 menu">
+                <ul>
+                    <li>
+                        <a href="management\tests.html">Test</a>
+                    </li>
+                    <li>
+                        <a href="management\users.html">Users</a>                       
+                    </li>
+                    <li><a href="management\reports.html">Reports</a>                       
+                    </li>
+                    <li><a href="management\classes.html">Classes</a>                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class=" col-8 sub-menu">
+                <ul>
+                    <li>
+                        <a href="find-test.html">AssignTo students</a>                   
+                    </li>
+                    <li>
+                        <a href="assign-test.html">Edit Test</a>                   
+                    </li>
+                    <li>
+                        <a href="questions\singlechoice.html">asdfasdf</a>                   
+                    </li>
+                    <li><a href="questions\matching.html">asdf</a>                  
+                    </li>
+                    <li><a href="questions\fill-in-the-blank.html">asdf</a>                  
+                    </li>
+                    <li><a href="questions\ordering.html">asdfasdf</a>                  
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+
+        <div class="row form-pad">
+            <div class="col-12">
+                <form class="my-form my-form-drt">
+                    <div class="my-ctl-group">
+                        <label>Find Test</label>
+                        <input placeholder="Enter criteria here" type="text" required>
+                        <select name="QuestionOrder">
+                            <option value="one">by date</option>
+                            <option value="two">by semester</option>
+                            <option value="three">professor</option>
+                            <option value="four">completed</option>
+                            <option value="four">deactivated</option>
+                            <option value="four">closed</option>
+                        </select>
+                        <button type="button"  style="width:100px;height:21px">find test</button>
+                    </div>
+                    <div class="my-ctl-group">
+                        <table class="pure-table">
+                            <thead>
+                                <tr>
+                                    <th><input id="checkBox" type="checkbox"></th> 
+                                    <th>test Code</th>
+                                    <th>Test Id</th>
+                                    <th>Name</th>
+                                    <th>date Created</th>
+                                    <th>End date</th>
+                                    <th>Semester</th> 
+                                    <th>status</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PY112</td>
+                                    <td>2343</td>
+                                    <td>Physiology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>MH234</td>
+                                    <td>2343</td>
+                                    <td>Mathematics</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>closed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>HST432</td>
+                                    <td>2343</td>
+                                    <td>ddonald</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Summer</td>
+                                    <td>deactiv</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PSY234</td>
+                                    <td>2343</td>
+                                    <td>Psychology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>FR345</td>
+                                    <td>2343</td>
+                                    <td>French</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>Completed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                      <div class="my-ctl-group">
+                        
+                        <button type="button"  style="width:170px;height:23px">Add Test</button>
+                    </div>
+                </form>
+                <p ></p>
+            </div>
+        </div>
+
+              <div class="row form-pad">
+            <div class="col-12">
+                <form class="my-form my-form-drt">
+                    <div class="my-ctl-group">
+                        <label>Find Student</label>
+                        <input placeholder="Enter criteria here" type="text" required>
+                        <select name="QuestionOrder">
+                            <option value="one">by name</option>
+                            <option value="two">by age</option>
+                            <option value="three">courses</option>
+                            <option value="four">sexe</option>
+                            <option value="four">discipline</option>
+                        </select>
+                        <button type="button"  style="width:100px;height:21px">find test</button>
+                    </div>
+                    <div class="my-ctl-group">
+                        <table class="pure-table">
+                            <thead>
+                                <tr>
+                                    <th><input id="checkBox" type="checkbox"></th> 
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Location</th>
+                                    <th>date Created</th>
+                                    <th>End date</th>
+                                    <th>Semester</th> 
+                                    <th>status</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PY112</td>
+                                    <td>2343</td>
+                                    <td>Physiology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>MH234</td>
+                                    <td>2343</td>
+                                    <td>Mathematics</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>closed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>HST432</td>
+                                    <td>2343</td>
+                                    <td>ddonald</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Summer</td>
+                                    <td>deactiv</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PSY234</td>
+                                    <td>2343</td>
+                                    <td>Psychology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>FR345</td>
+                                    <td>2343</td>
+                                    <td>French</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>Completed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                      <div class="my-ctl-group">
+                        
+                        <button type="button"  style="width:170px;height:23px">Add Student</button>
+                    </div>
+                </form>
+                <p ></p>
+            </div>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="..\css\grid.css">
+        <link rel="stylesheet" type="text/css" href="..\css\menu-admin.css">
+        <link rel="stylesheet" type="text/css" href="..\css\form-style.css">
+        <link rel="stylesheet" type="text/css" href="..\css\table-style.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12"><span></span></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 menu">
+                <ul>
+                    <li>
+                        <a href="management\tests.html">Test</a>
+                    </li>
+                    <li>
+                        <a href="management\users.html">Users</a>                       
+                    </li>
+                    <li><a href="management\reports.html">Reports</a>                       
+                    </li>
+                    <li><a href="management\classes.html">Classes</a>                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class=" col-8 sub-menu">
+                <ul>
+                    <li>
+                        <a href="find-test.html">AssignTo students</a>                   
+                    </li>
+                    <li>
+                        <a href="assign-test.html">Edit Test</a>                   
+                    </li>
+                    <li>
+                        <a href="questions\singlechoice.html">asdfasdf</a>                   
+                    </li>
+                    <li><a href="questions\matching.html">asdf</a>                  
+                    </li>
+                    <li><a href="questions\fill-in-the-blank.html">asdf</a>                  
+                    </li>
+                    <li><a href="questions\ordering.html">asdfasdf</a>                  
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+
+        <div class="row form-pad">
+            <div class="col-12">
+                <form class="my-form my-form-drt">
+                    <div class="my-ctl-group">
+                        <label>Find Test</label>
+                        <input placeholder="Enter criteria here" type="text" required>
+                        <select name="QuestionOrder">
+                            <option value="one">by date</option>
+                            <option value="two">by semester</option>
+                            <option value="three">professor</option>
+                            <option value="four">completed</option>
+                            <option value="four">deactivated</option>
+                            <option value="four">closed</option>
+                        </select>
+                        <button type="button"  style="width:100px;height:21px">find test</button>
+                    </div>
+                    <div class="my-ctl-group">
+                        <table class="pure-table">
+                            <thead>
+                                <tr>
+                                    <th><input id="checkBox" type="checkbox"></th> 
+                                    <th>test Code</th>
+                                    <th>Test Id</th>
+                                    <th>Name</th>
+                                    <th>date Created</th>
+                                    <th>End date</th>
+                                    <th>Semester</th> 
+                                    <th>status</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PY112</td>
+                                    <td>2343</td>
+                                    <td>Physiology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>MH234</td>
+                                    <td>2343</td>
+                                    <td>Mathematics</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>closed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>HST432</td>
+                                    <td>2343</td>
+                                    <td>ddonald</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Summer</td>
+                                    <td>deactiv</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PSY234</td>
+                                    <td>2343</td>
+                                    <td>Psychology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>FR345</td>
+                                    <td>2343</td>
+                                    <td>French</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>Completed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                      <div class="my-ctl-group">
+                        
+                        <button type="button"  style="width:170px;height:23px">Add Test</button>
+                    </div>
+                </form>
+                <p ></p>
+            </div>
+        </div>
+
+              <div class="row form-pad">
+            <div class="col-12">
+                <form class="my-form my-form-drt">
+                    <div class="my-ctl-group">
+                        <label>Find Student</label>
+                        <input placeholder="Enter criteria here" type="text" required>
+                        <select name="QuestionOrder">
+                            <option value="one">by name</option>
+                            <option value="two">by age</option>
+                            <option value="three">courses</option>
+                            <option value="four">sexe</option>
+                            <option value="four">discipline</option>
+                        </select>
+                        <button type="button"  style="width:100px;height:21px">find test</button>
+                    </div>
+                    <div class="my-ctl-group">
+                        <table class="pure-table">
+                            <thead>
+                                <tr>
+                                    <th><input id="checkBox" type="checkbox"></th> 
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Location</th>
+                                    <th>date Created</th>
+                                    <th>End date</th>
+                                    <th>Semester</th> 
+                                    <th>status</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PY112</td>
+                                    <td>2343</td>
+                                    <td>Physiology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>MH234</td>
+                                    <td>2343</td>
+                                    <td>Mathematics</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>closed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>HST432</td>
+                                    <td>2343</td>
+                                    <td>ddonald</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Summer</td>
+                                    <td>deactiv</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PSY234</td>
+                                    <td>2343</td>
+                                    <td>Psychology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>FR345</td>
+                                    <td>2343</td>
+                                    <td>French</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>Completed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                      <div class="my-ctl-group">
+                        
+                        <button type="button"  style="width:170px;height:23px">Add Student</button>
+                    </div>
+                </form>
+                <p ></p>
+            </div>
+        </div>
+    </body>
+</html>
+
+    <body>
+        <div class="row">
+            <div class="col-12"><span></span></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 menu">
+                <ul>
+                    <li>
+                        <a href="management\tests.html">Test</a>
+                    </li>
+                    <li>
+                        <a href="management\users.html">Users</a>                       
+                    </li>
+                    <li><a href="management\reports.html">Reports</a>                       
+                    </li>
+                    <li><a href="management\classes.html">Classes</a>                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class=" col-8 sub-menu">
+                <ul>
+                    <li>
+                        <a href="createusers.html">AssignTo students</a>                   
+                    </li>
+                    <li>
+                        <a href="assign-test.html">Assign Test</a>                   
+                    </li>
+                    <li>
+                        <a href="questions\singlechoice.html">asdfasdf</a>                   
+                    </li>
+                    <li><a href="questions\matching.html">asdf</a>                  
+                    </li>
+                    <li><a href="questions\fill-in-the-blank.html">asdf</a>                  
+                    </li>
+                    <li><a href="questions\ordering.html">asdfasdf</a>                  
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+
+        <div class="row form-pad">
+            <div class="col-12">
+                <form class="my-form my-form-drt">
+                    <div class="my-ctl-group">
+                        <label>Find Test</label>
+                        <input placeholder="Enter criteria here" type="text" required>
+                        <select name="QuestionOrder">
+                            <option value="one">by date</option>
+                            <option value="two">by semester</option>
+                            <option value="three">professor</option>
+                            <option value="four">completed</option>
+                            <option value="four">deactivated</option>
+                            <option value="four">closed</option>
+                        </select>
+                        <button type="button"  style="width:100px;height:21px">find test</button>
+                    </div>
+                    <div class="my-ctl-group">
+                        <table class="pure-table">
+                            <thead>
+                                <tr>
+                                    <th><input id="checkBox" type="checkbox"></th> 
+                                    <th>test Code</th>
+                                    <th>Test Id</th>
+                                    <th>Name</th>
+                                    <th>date Created</th>
+                                    <th>End date</th>
+                                    <th>Semester</th> 
+                                    <th>status</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PY112</td>
+                                    <td>2343</td>
+                                    <td>Physiology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>MH234</td>
+                                    <td>2343</td>
+                                    <td>Mathematics</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>closed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>HST432</td>
+                                    <td>2343</td>
+                                    <td>ddonald</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Summer</td>
+                                    <td>deactiv</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>PSY234</td>
+                                    <td>2343</td>
+                                    <td>Psychology</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Fall</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="checkBox" type="checkbox"></td>
+                                    <td>FR345</td>
+                                    <td>2343</td>
+                                    <td>French</td>
+                                    <td>3/2/2017</td>
+                                    <td>3/2/2017</td>
+                                    <td>Spring</td>
+                                    <td>Completed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                      <div class="my-ctl-group">
+                        
+                        <button type="button"  style="width:170px;height:23px">Add Test</button>
+                    </div>
+                </form>
+                <p ></p>
+            </div>
+        </div>
+
+
+    </body>
+</html>

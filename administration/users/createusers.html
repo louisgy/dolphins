@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+          <link rel="stylesheet" type="text/css" href="..\css\grid.css">
+        <link rel="stylesheet" type="text/css" href="..\css\menu-admin.css">
+        <link rel="stylesheet" type="text/css" href="..\css\form-style.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12"><span></span></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 menu">
+                <ul>
+                    <li>
+                        <a href="management\tests.html">Test</a>
+                    </li>
+                    <li>
+                        <a href="management\u.html">Users</a>                       
+                    </li>
+                    <li><a href="management\reports.html">Reports</a>                       
+                    </li>
+                    <li><a href="management\classes.html">Classes</a>                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class=" col-8 sub-menu">
+                <ul>
+                    <li>
+                        <a href="questions\truefalse.html">Create users</a>                   
+                    </li>
+                    <li>
+                        <a href="questions\multiplechoice.html">adsf</a>                   
+                    </li>
+                    <li>
+                        <a href="questions\singlechoice.html">asdfasdf</a>                   
+                    </li>
+                    <li><a href="questions\matching.html">asdf</a>                  
+                    </li>
+                    <li><a href="questions\fill-in-the-blank.html">asdf</a>                  
+                    </li>
+                    <li><a href="questions\ordering.html">asdfasdf</a>                  
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>  
+        <div class="row form-pad">
+            <div class="col-12">
+                <form class="my-form my-form-drt">
+
+                   <div class="my-ctl-group">
+                        <label>Question Order :</label>
+                        <select name="QuestionOrder">
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                        </select>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>First name</label>
+                        <input placeholder="Peter" type="text" required>
+                    </div>
+                   
+                    <div class="my-ctl-group">
+                        <label>last name</label>
+                        <input placeholder="Thompson" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>username</label>
+                        <input placeholder="" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Email</label>
+                        <input placeholder="Thompson" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Password</label>
+                        <input placeholder="Thompson" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Role</label>
+                        <select name="QuestionOrder">
+                            <option value="administrator">administrator</option>
+                            <option value="student">student</option>
+                            <option value="professor">professor</option>
+                            <option value="schooladministrator">School administrator</option>
+                        </select>
+                    </div>
+                </form>
+                <p id="demo"></p>
+            </div>
+        </div>
+    </body>
+</html>

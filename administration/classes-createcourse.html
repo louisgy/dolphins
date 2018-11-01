@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="..\css\grid.css">
+        <link rel="stylesheet" type="text/css" href="..\css\menu-admin.css">
+        <link rel="stylesheet" type="text/css" href="..\css\form-style.css">
+        <link rel="stylesheet" type="text/css" href="..\css\custom-menu.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12"><span></span></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 menu">
+                <ul>
+                    <li>
+                        <a href="management\tests.html">Test</a>
+                    </li>
+                    <li>
+                        <a href="management\users.html">Users</a>                       
+                    </li>
+                    <li><a href="management\reports.html">Reports</a>                       
+                    </li>
+                    <li><a href="management\classes.html">Classes</a>                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class=" col-8 sub-menu">
+                <ul>
+                    <li>
+                        <a href="questions\truefalse.html">Create Courses</a>                   
+                    </li>
+                    <li>
+                        <a href="questions\multiplechoice.html">Add students</a>                   
+                    </li>
+                    <li>
+                        <a href="questions\singlechoice.html"></a>                   
+                    </li>
+                    <li><a href="questions\matching.html">Matching</a>                  
+                    </li>
+                    <li><a href="questions\fill-in-the-blank.html">Fill-in-the-blank</a>                  
+                    </li>
+                    <li><a href="questions\ordering.html">Ordering</a>                  
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row form-pad">
+            <div class="col-12">
+                <form class="my-form my-form-drt">
+                    <div class="my-ctl-group">
+                        <label>Class Category</label>
+                        <select name="QuestionOrder">
+                            <option value="one">History HST202</option>
+                            <option value="two">Social Sciences SC201</option>
+                            <option value="three">Math Mth201</option>
+                            <option value="four">Geography GEO203</option>
+                        </select>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Time length (Minutes)</label>
+                        <input placeholder="90" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Start Date</label>
+                        <input  type="date" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>End date</label>
+                        <input  type="date" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Email</label>
+                        <input  type="date" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Password</label>
+                        <input placeholder="Thompson" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Role</label>
+                        <select name="QuestionOrder">
+                            <option value="administrator">administrator</option>
+                            <option value="student">student</option>
+                            <option value="professor">professor</option>
+                            <option value="schooladministrator">School administrator</option>
+                        </select>
+                    </div>
+                </form>
+                <p id="demo"></p>
+            </div>
+        </div>
+    </body>
+</html>

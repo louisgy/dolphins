@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Fill in the blank</title>
+        <meta charset="UTF-8">
+               <link rel="stylesheet" type="text/css" href="..\css\grid.css">
+        <link rel="stylesheet" type="text/css" href="..\css\menu-admin.css">
+        <link rel="stylesheet" type="text/css" href="..\css\form-style.css">
+    </head>
+    <body>  
+        <div class="row">
+            <div class="col-12"><span></span></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 menu">
+                <ul>
+                    <li>
+                        <a href="#">Test</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>                       
+                    </li>
+                    <li><a href="#">Reports</a>                       
+                    </li>
+                    <li><a href="#">Classes</a>                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class=" col-8 sub-menu">
+                <ul>
+                    <li>
+                        <a href="truefalse.html">True\False</a>                   
+                    </li>
+                    <li>
+                        <a href="multiplechoice.html">Multiple Choice</a>                   
+                    </li>
+                    <li>
+                        <a href="singlechoice.html">Single Choice</a>                   
+                    </li>
+                    <li><a href="matching.html">Matching</a>                  
+                    </li>
+                    <li><a href="fill-in-the-blank.html">Fill-in-the-blank</a>                  
+                    </li>
+                    <li><a href="ordering.html">Ordering</a>                  
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row form-pad">
+            <div class="col-12">
+                <form class="my-form my-form-drt">
+
+                    <div class="my-ctl-group">
+                        <label>Question Order :</label>
+                        <select name="QuestionOrder">
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                        </select>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Question Instructions</label>
+                        <input placeholder="Fill in the blank" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Question Statement</label>
+                        <input placeholder="Enter Question Statement" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        Below enter sentences portion and the expected statement for filling the blank
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>statement part</label>
+                       
+                        <input placeholder="the last economic crisis hit the USA in" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>blank</label>
+                        
+                        <input placeholder="2008" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>statement continue</label>
+                        <input placeholder="and last for " type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>blank</label>
+                        <input placeholder="10 years" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                            <label></label>
+                           <button type="button"  style="width:46px">Submit</button>
+                        </div>
+                </form>
+               
+            </div>
+        </div>
+
+    </body>
+</html>

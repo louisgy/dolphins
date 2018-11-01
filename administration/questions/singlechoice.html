@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>single choice</title>
+        <meta charset="UTF-8">
+             <link rel="stylesheet" type="text/css" href="..\css\grid.css">
+        <link rel="stylesheet" type="text/css" href="..\css\menu-admin.css">
+        <link rel="stylesheet" type="text/css" href="..\css\form-style.css">
+    </head>
+    <body>  
+        <div class="row">
+            <div class="col-12"><span></span></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 menu">
+                <ul>
+                    <li>
+                        <a href="#">Test</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>                       
+                    </li>
+                    <li><a href="#">Reports</a>                       
+                    </li>
+                    <li><a href="#">Classes</a>                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class=" col-8 sub-menu">
+                <ul>
+                    <li>
+                        <a href="truefalse.html">True\False</a>                   
+                    </li>
+                    <li>
+                        <a href="multiplechoice.html">Multiple Choice</a>                   
+                    </li>
+                    <li>
+                        <a href="singlechoice.html">Single Choice</a>                   
+                    </li>
+                    <li><a href="matching.html">Matching</a>                  
+                    </li>
+                    <li><a href="fill-in-the-blank.html">Fill-in-the-blank</a>                  
+                    </li>
+                    <li><a href="ordering.html">Ordering</a>                  
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row form-pad">
+            <div class="col-12">
+                <form class="my-form my-form-drt">
+
+                    <div class="my-ctl-group">
+                        <label>Question Order :</label>
+                        <select name="QuestionOrder">
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                        </select>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>Question Statement</label>
+                        <input placeholder="Enter Question Statement" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        Below Enter plausible answers and select the correct answer
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>1</label>
+                        <input type="radio" name="meal" value="vegan" id="vegan-id"> 
+                        <input placeholder="Enter answer statement" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>2</label>
+                        <input type="radio" name="meal" value="vegan" id="vegan-id">
+                        <input placeholder="Enter answer statement" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>3</label>
+                       <input type="radio" name="meal" value="vegan" id="vegan-id">
+                        <input placeholder="Enter answer statement" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label>4</label>
+                       <input type="radio" name="meal" value="vegan" id="vegan-id">
+                        <input placeholder="Enter answer statement" type="text" required>
+                    </div>
+                    <div class="my-ctl-group">
+                        <label></label>
+                        <button type="button"  style="width:46px">Submit</button>
+                    </div>
+
+                </form>
+                <p id="demo"></p>
+            </div>
+        </div>
+
+    </body>
+</html>
