@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link href=".../css/items-style.css" type="text/css" rel="stylesheet">
     <link href="../../css/table.css" type="text/css" rel="stylesheet">
-    <title>Adding Course</title>
+    <title>Adding Student</title>
 </head>
 
 <body>
@@ -82,44 +82,85 @@
     </nav>
     <section class="banner-2">
         <div class="container py-5 mt-5">
-            <h2>Add Course</h2>
-            <div class="row">
-                <div class="col-md-12 ">
-                    <form class="form-inline">
-                        <input type="text" class="form-control mx-sm-3" id="inlineFormInput" placeholder="Type Test name">
-                        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-                            <option selected>By Semester</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-                            <option selected>By domain</option>
-                            <option value="1">Mathematics</option>
-                            <option value="2">Physiology</option>
-                            <option value="3">Art and Literature</option>
-                        </select>
-                        <button type="submit" class="btn btn-primary">Find Course</button>
-                    </form>
-                </div>
-            </div>
+            <h2>Create new test<br><br></h2>
         </div>
     </section>
     <div class="container">
         <div class="row">
+            <div class="col-7 mr-auto ml-auto">
+                <div class="container">
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Assessment Code</label>
+                            <div class="col-sm-7">
+                                <!-- Session code automatically created-->
+                                <input type="text" class="form-control" id="inputPassword3" placeholder="MA398-M234" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Course</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="inputPassword3" placeholder="MA 101 Algebra" disabled>
+                            </div>
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn btn-primary">Add Course</button>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-date-input" class="col-3 col-form-label">Start Date</label>
+                            <div class="col-7">
+                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-date-input" class="col-3 col-form-label">End Date</label>
+                            <div class="col-7">
+                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Dfficulty Level</label>
+                            <div class="col-sm-7">
+                                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                                    <option selected>1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Time Length</label>
+                            <div class="col-sm-7">
+                                <input type="Time" class="form-control" id="inputPassword3" placeholder="394">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-sm-3 col-sm-7">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="container">
+        <div class="row">
             <div class="col-md-12 mr-auto ml-auto">
                 <main class="container pt-5">
                     <div class="card mb-5">
-                        <div class="card-header">Fearures</div>
+                        <div class="card-header"> Select a Course(Show up only when click on "add course")</div>
                         <div class="card-block p-0">
                             <table class="table table-bordered table-sm m-0">
                                 <thead class="">
                                     <tr>
                                         <th>#</th>
-                                        <th>Name</th>
-                                        <th>Registration Date</th>
-                                        <th>E-mail address</th>
-                                        <th>Premium Plan</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Email</th>
+                                        <th>Domain</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -133,7 +174,7 @@
                                         <td>John Lilki</td>
                                         <td>September 14, 2013</td>
                                         <td>jhlilk22@yahoo.com</td>
-                                        <td>No</td>
+                                        <td>Mathematics</td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -145,7 +186,7 @@
                                         <td>John Lilki</td>
                                         <td>September 14, 2013</td>
                                         <td>jhlilk22@yahoo.com</td>
-                                        <td>No</td>
+                                        <td>Music Art</td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -157,7 +198,7 @@
                                         <td>John Lilki</td>
                                         <td>September 14, 2013</td>
                                         <td>jhlilk22@yahoo.com</td>
-                                        <td>No</td>
+                                        <td>Social Sciences</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -181,114 +222,6 @@
                             </nav>
                         </div>
                     </div>
-                    <table class="table table-bordered table-definition mb-5">
-                        <thead class="table-warning ">
-                            <tr>
-                                <th></th>
-                                <th>Name</th>
-                                <th>Registration Date</th>
-                                <th>E-mail address</th>
-                                <th>Premium Plan</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                    </label>
-                                </td>
-                                <td>John Lilki</td>
-                                <td>September 14, 2013</td>
-                                <td>jhlilk22@yahoo.com</td>
-                                <td>No</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                    </label>
-                                </td>
-                                <td>John Lilki</td>
-                                <td>September 14, 2013</td>
-                                <td>jhlilk22@yahoo.com</td>
-                                <td>No</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                    </label>
-                                </td>
-                                <td>John Lilki</td>
-                                <td>September 14, 2013</td>
-                                <td>jhlilk22@yahoo.com</td>
-                                <td>No</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th></th>
-                                <th colspan="4">
-                                    <button class="btn btn-primary float-right">Add Course</button>
-                                    <button class="btn btn-default">Approve</button>
-                                    <button class="btn btn-default">Approve All</button>
-                                </th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <!--         <table class="table  table-sm">
-            <thead class="table-info">
-                <tr>
-                    <th></th>
-                    <th>Name</th>
-                    <th>Registration Date</th>
-                    <th>E-mail address</th>
-                    <th>Premium Plan</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                        </label>
-                    </td>
-                    <td>John Lilki</td>
-                    <td>September 14, 2013</td>
-                    <td>jhlilk22@yahoo.com</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                        </label>
-                    </td>
-                    <td>John Lilki</td>
-                    <td>September 14, 2013</td>
-                    <td class="table-danger">jhlilk22@yahoo.com</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                        </label>
-                    </td>
-                    <td>John Lilki</td>
-                    <td>September 14, 2013</td>
-                    <td>jhlilk22@yahoo.com</td>
-                    <td>No</td>
-                </tr>
-            </tbody>
-        </table> -->
                 </main>
             </div>
         </div>
